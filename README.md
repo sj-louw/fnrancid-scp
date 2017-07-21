@@ -1,5 +1,8 @@
 # fnrancid-scp
 
+Unfortunately, while Rancid supports Fortinet devices, it doesn’t work well with “VDOMs” (virtual domains), and there are problems when restoring the configuration. The issue is that when you execute “show full-configuration”, it doesn’t dump everything!
+The one true way of getting the full configuration of Fortinet devices is via scp. It works quite well, and you might even say that it is superior than using the an interactive SSH session to transfer the data.
+
 Rancid support for Fortinet devices using the scp interface.
 
 License: same as whatever license rancid version 3 uses
